@@ -166,6 +166,73 @@ button:hover {
     background-color: #2c3e50;
 }
 
+.glossary-zone {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.glossary-zone h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 3rem;
+}
+
+.glossary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.glossary-item {
+    background: white;
+    border-left: 5px solid var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.glossary-item:hover {
+    transform: scale(1.02);
+}
+
+.glossary-item h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.glossary-item h3 small {
+    font-size: 0.8rem;
+    color: #95a5a6;
+    display: block;
+}
+
+.glossary-item .analogy {
+    background: #fdf2e9;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+.glossary-item .example {
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    border-top: 1px dashed #eee;
+    padding-top: 10px;
+}
+
 footer {
     text-align: center;
     padding: 2rem;
