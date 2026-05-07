@@ -1,0 +1,178 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #e74c3c;
+    --tertiary-color: #f1c40f;
+    --bg-color: #f4f7f6;
+    --text-color: #2c3e50;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Noto+Sans+KR', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.infographic {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.analogy {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.features li::before {
+    content: "✔️";
+    margin-right: 10px;
+}
+
+.interactive-zone {
+    background-color: #ecf0f1;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.house-demo {
+    width: 200px;
+    height: 200px;
+    margin: 2rem auto;
+    position: relative;
+    border: 2px dashed #bdc3c7;
+    transition: all 0.5s ease;
+}
+
+.roof {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 60px solid #bdc3c7;
+    position: absolute;
+    top: -60px;
+    transition: all 0.5s ease;
+}
+
+.walls {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.window {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #bdc3c7;
+    position: absolute;
+    top: 30px;
+    transition: all 0.5s ease;
+}
+
+#window1 { left: 30px; }
+#window2 { right: 30px; }
+
+.door {
+    width: 50px;
+    height: 80px;
+    background-color: #fff;
+    border: 1px solid #bdc3c7;
+    position: absolute;
+    bottom: 0;
+    left: 75px;
+    transition: all 0.5s ease;
+}
+
+/* States */
+.has-html .house-demo { border: 2px solid #34495e; }
+.has-html .roof { border-bottom-color: #34495e; }
+.has-html .walls { border: 2px solid #34495e; }
+
+.has-css .roof { border-bottom-color: #e67e22; }
+.has-css .walls { background-color: #f39c12; }
+.has-css .window { border-color: #2c3e50; }
+.has-css .door { background-color: #795548; }
+
+.has-java .window { background-color: #f1c40f; box-shadow: 0 0 15px #f1c40f; }
+
+.controls {
+    margin-top: 2rem;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #34495e;
+    color: white;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #2c3e50;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2c3e50;
+    color: white;
+}
+
+footer a {
+    color: var(--tertiary-color);
+}

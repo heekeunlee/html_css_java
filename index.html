@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 개발의 3요소: HTML, CSS, JAVA(JS)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>웹 앱을 만드는 마법의 레시피</h1>
+        <p>HTML, CSS, 그리고 JAVA(JavaScript)가 어떻게 조화를 이룰까요?</p>
+    </header>
+
+    <main class="infographic">
+        <section class="card" id="html-card">
+            <div class="icon">🏗️</div>
+            <h2>HTML</h2>
+            <p class="analogy">"집의 뼈대와 벽"</p>
+            <p class="description">웹사이트의 <strong>구조</strong>를 만듭니다. 제목, 본문, 이미지, 버튼 등 무엇이 어디에 있을지 결정하는 설계도와 같습니다.</p>
+            <ul class="features">
+                <li>제목 (h1, h2)</li>
+                <li>단락 (p)</li>
+                <li>목록 (ul, li)</li>
+                <li>이미지 (img)</li>
+            </ul>
+        </section>
+
+        <section class="card" id="css-card">
+            <div class="icon">🎨</div>
+            <h2>CSS</h2>
+            <p class="analogy">"인테리어와 페인트"</p>
+            <p class="description">웹사이트의 <strong>디자인</strong>을 담당합니다. 색상, 글꼴, 간격, 배치 등을 아름답게 꾸며주는 드레스업 과정입니다.</p>
+            <ul class="features">
+                <li>배경 색상</li>
+                <li>폰트 스타일</li>
+                <li>레이아웃 (Flex, Grid)</li>
+                <li>애니메이션</li>
+            </ul>
+        </section>
+
+        <section class="card" id="java-card">
+            <div class="icon">⚡</div>
+            <h2>JAVA / JS</h2>
+            <p class="analogy">"전기 장치와 가전제품"</p>
+            <p class="description">웹사이트의 <strong>동작과 로직</strong>을 담당합니다. 버튼을 눌렀을 때의 반응, 데이터 처리 등 살아있는 기능을 부여합니다.</p>
+            <ul class="features">
+                <li>클릭 이벤트</li>
+                <li>데이터 계산</li>
+                <li>서버 통신</li>
+                <li>복잡한 로직</li>
+            </ul>
+        </section>
+    </main>
+
+    <section class="interactive-zone">
+        <h2>체험해보기: 스위치를 켜보세요!</h2>
+        <div class="house-demo" id="house">
+            <div class="roof"></div>
+            <div class="walls">
+                <div class="window" id="window1"></div>
+                <div class="window" id="window2"></div>
+                <div class="door"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="btn-html">1. HTML (뼈대 보기)</button>
+            <button id="btn-css">2. CSS (색칠 하기)</button>
+            <button id="btn-java">3. JAVA/JS (불 켜기)</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 웹 앱 가이드. <a href="https://github.com/heekeunlee/html_css_java">GitHub 저장소 방문</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
